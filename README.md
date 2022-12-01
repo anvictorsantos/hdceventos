@@ -1,6 +1,7 @@
 ## Setup
 composer install
 cp .env.example .env
+php artisan key:generate
 mkdir /public/img/events
 php artisan migrate
 ## Sqlite
