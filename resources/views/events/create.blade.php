@@ -10,15 +10,19 @@
         @csrf
         <div class="form-group">
             <label for="image">Imagem do Evento:</label>
-            <input type="file" class="form-control-file" id="image" name="image" name="Nome do evento">
+            <input type="file" class="form-control-file" id="image" name="image">
         </div>
         <div class="form-group">
             <label for="title">Evento:</label>
-            <input type="text" class="form-control" id="title" name="title" name="Nome do evento">
+            <input type="text" class="form-control" id="title" name="title" placeholder="Nome do evento">
+        </div>
+        <div class="form-group">
+            <label for="date">Data do Evento:</label>
+            <input type="date" class="form-control" id="date" name="date">
         </div>
         <div class="form-group">
             <label for="city">Cidade:</label>
-            <input type="text" class="form-control" id="city" name="city" name="Local do evento">
+            <input type="text" class="form-control" id="city" name="city" placeholder="Local do evento">
         </div>
         <div class="form-group">
             <label for="private">O evento é privado ?</label>
