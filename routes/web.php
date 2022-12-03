@@ -19,8 +19,4 @@ Route::get('/events/create', [EventController::class, 'create'])->middleware('au
 Route::get('/events/{id}', [EventController::class, 'show']);
 Route::post('/events', [EventController::class, 'store']);
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
-
-require __DIR__.'/auth.php';
+Route::get('/dashboard', [EventController::class, 'dashboard'])->middleware('auth');
